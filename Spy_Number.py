@@ -1,15 +1,12 @@
-num = int(input())
-Temp=num
-sumOfDigit = 0
-pro=1
-while Temp > 0:
-    lastDigit = Temp % 10
-    sumOfDigit = sumOfDigit + lastDigit
-    pro = pro * lastDigit
-    Temp = Temp // 10
-
-
-if (sumOfDigit==pro):
+n=int(input())
+s=0
+p=1
+while(n):
+    d=n%10
+    s=s+d
+    p=p*d
+    n=n//10
+if s==p:
     print("Spy Number")
 else:
     print("Not Spy Number")
