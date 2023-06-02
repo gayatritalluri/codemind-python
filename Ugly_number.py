@@ -1,15 +1,11 @@
-def is_ugly(num):
-        if num == 0:
-            return False
-        for i in [2, 3, 5]:
-            while num % i == 0:
-                num /= i
-        if(num==1):
-            return 1
-        else:
-            return 0
-a=int(input())
-if(is_ugly(a)):
+n = int(input())
+while n%2==0:
+    n=n//2
+while n%3==0:
+    n=n//3
+while n%5==0:
+    n=n//5
+if n==1:
     print("Ugly Number")
 else:
     print("Not Ugly Number")
